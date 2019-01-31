@@ -1,0 +1,607 @@
+/*
+
+Open source font used for controls
+
+*/
+
+@import url('https://fontlibrary.org/face/jellee-typeface');
+
+/*
+
+Base
+
+*/
+
+.niji {
+	font-family: 'JelleeRoman'; 
+	font-weight: normal; 
+	font-style: normal; 
+	font-size: x-large;
+	position: relative;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/********************************************
+
+Labels
+
+********************************************/
+
+/*
+
+Default label
+
+*/
+
+.lbl {
+	padding: 0.7rem;
+	color: #777;
+}
+
+/*
+
+Green label
+
+*/
+
+.lbl-green {
+	padding: 0.7rem;
+	color: #7AC70C;
+}
+
+/*
+
+Blue label
+
+*/
+
+.lbl-blue {
+	padding: 0.7rem;
+	color: #1CB0F6;
+}
+
+/*
+
+Red label
+
+*/
+
+.lbl-red {
+	padding: 0.7rem;
+	color: #D33131;
+}
+
+/*
+
+Orange label
+
+*/
+
+.lbl-orange {
+	padding: 0.7rem;
+	color: #FA811B;
+}
+
+/********************************************
+
+Buttons
+
+********************************************/
+
+
+/*
+
+Default button
+
+*/
+
+.btn {
+	border-radius: 0.8rem;
+	border-left: 0.1rem solid #AAA;
+	border-right: 0.1rem solid #AAA;
+	border-top: 0.1rem solid #AAA;
+	border-bottom: 0.4rem solid #AAA;
+	padding: 0.7rem;
+	color: #777;
+	background-color: #FFF;
+	cursor: pointer;
+}
+
+.btn:active {
+	top: 0.4rem;
+	margin-bottom: 0.3rem;
+	border-bottom: 0.1rem solid #BBB;
+}
+
+/*
+
+Green button
+
+*/
+
+.btn-green {
+	border-radius: 0.8rem;
+	border-left: 0.1rem solid #7AC70C;
+	border-right: 0.1rem solid #7AC70C;
+	border-top: 0.1rem solid #7AC70C;
+	border-bottom: 0.4rem solid #7AC70C;
+	padding: 0.7rem;
+	color: #FFF;
+	background-color: #8EE000;
+	cursor: pointer;
+}
+
+.btn-green:active {
+	top: 0.4rem;
+	margin-bottom: 0.3rem;
+	border-bottom: 0.1rem solid #7AC70C;
+	background-color: #7AC70C;
+}
+
+/*
+
+Blue button
+
+*/
+
+.btn-blue {
+	border-radius: 0.8rem;
+	border-left: 0.1rem solid #1CB0F6;
+	border-right: 0.1rem solid #1CB0F6;
+	border-top: 0.1rem solid #1CB0F6;
+	border-bottom: 0.4rem solid #1CB0F6;
+	padding: 0.7rem;
+	color: #FFF;
+	background-color: #14D4F4;
+	cursor: pointer;
+}
+
+.btn-blue:active {
+	top: 0.4rem;
+	margin-bottom: 0.3rem;
+	border-bottom: 0.1rem solid #1CB0F6;
+	background-color: #1CB0F6;
+}
+
+/*
+
+Red button
+
+*/
+
+.btn-red {
+	border-radius: 0.8rem;
+	border-left: 0.1rem solid #D33131;
+	border-right: 0.1rem solid #D33131;
+	border-top: 0.1rem solid #D33131;
+	border-bottom: 0.4rem solid #D33131;
+	padding: 0.7rem;
+	color: #FFF;
+	background-color: #E53B3B;
+	cursor: pointer;
+}
+
+.btn-red:active {
+	top: 0.4rem;
+	margin-bottom: 0.3rem;
+	border-bottom: 0.1rem solid #D33131;
+	background-color: #D33131;
+}
+
+/*
+
+Orange button
+
+*/
+
+.btn-orange {
+	border-radius: 0.8rem;
+	border-left: 0.1rem solid #FA811B;
+	border-right: 0.1rem solid #FA811B;
+	border-top: 0.1rem solid #FA811B;
+	border-bottom: 0.4rem solid #FA811B;
+	padding: 0.7rem;
+	color: #FFF;
+	background-color: #FF9400;
+	cursor: pointer;
+}
+
+.btn-orange:active {
+	top: 0.4rem;
+	margin-bottom: 0.3rem;
+	border-bottom: 0.1rem solid #FA811B;
+	background-color: #FA811B;
+}
+
+/********************************************
+
+Radio buttons
+
+********************************************/
+
+.rad {
+	padding: 0.7rem;
+	color: #777;
+}
+
+.rad label {
+	cursor: pointer;
+}
+
+.rad label:hover {
+	text-decoration: underline;
+}
+
+.rad input[type=radio] {
+	display: none;
+}
+
+.rad input[type="radio"]:checked + label {
+	font-size: 3rem;
+	text-decoration: underline;
+	opacity: 1;
+}
+
+/*
+
+Green radio
+
+*/
+
+.rad-green {
+	padding: 0.7rem;
+	color: #7AC70C;
+}
+
+.rad-green label {
+	cursor: pointer;
+}
+
+.rad-green label:hover {
+	text-decoration: underline;
+}
+
+.rad-green input[type=radio] {
+	display: none;
+}
+
+.rad-green input[type="radio"]:checked + label {
+	font-size: 3rem;
+	text-decoration: underline;
+	opacity: 1;
+}
+
+/*
+
+Blue radio
+
+*/
+
+.rad-blue {
+	padding: 0.7rem;
+	color: #1CB0F6;
+}
+
+.rad-blue label {
+	cursor: pointer;
+}
+
+.rad-blue label:hover {
+	text-decoration: underline;
+}
+
+.rad-blue input[type="radio"] {
+	display: none;
+}
+
+.rad-blue input[type="radio"]:checked + label {
+	font-size: 3rem;
+	text-decoration: underline;
+	opacity: 1;
+}
+
+/*
+
+Red radio
+
+*/
+
+.rad-red {
+	padding: 0.7rem;
+	color: #D33131;
+}
+
+.rad-red label {
+	cursor: pointer;
+}
+
+.rad-red label:hover {
+	text-decoration: underline;
+}
+
+.rad-red input[type="radio"] {
+	display: none;
+}
+
+.rad-red input[type="radio"]:checked + label {
+	font-size: 3rem;
+	text-decoration: underline;
+	opacity: 1;
+}
+
+/*
+
+Orange radio
+
+*/
+
+.rad-orange {
+	padding: 0.7rem;
+	color: #FA811B;
+}
+
+.rad-orange label {
+	cursor: pointer;
+}
+
+.rad-orange label:hover {
+	text-decoration: underline;
+}
+
+.rad-orange input[type="radio"] {
+	display: none;
+}
+
+.rad-orange input[type="radio"]:checked + label {
+	font-size: 3rem;
+	text-decoration: underline;
+	opacity: 1;
+}
+
+/********************************************
+
+Text boxes
+
+********************************************/
+
+/*
+
+Default text
+
+*/
+
+.text {
+	border: 0.1rem solid #AAA;
+	padding: 0.7rem;
+	border-radius: 0.8rem;
+	color: #777;
+	background-color: #FFF;
+}
+
+.text::-webkit-input-placeholder {
+	color: #DDD;
+}
+
+.text:-ms-input-placeholder {
+	color: #DDD;
+}
+
+.text::-ms-input-placeholder {
+	color: #DDD;
+}
+
+.text::placeholder {
+	color: #DDD;
+}
+
+/*
+
+Green text
+
+*/
+
+.text-green {
+	border: 0.1rem solid #7AC70C;
+	padding: 0.7rem;
+	border-radius: 0.8rem;
+	color: #7AC70C;
+	background-color: #FFF;
+}
+
+.text-green::-webkit-input-placeholder {
+	color: #BFF199;
+}
+
+.text-green:-ms-input-placeholder {
+	color: #BFF199;
+}
+
+.text-green::-ms-input-placeholder {
+	color: #BFF199;
+}
+
+.text-green::placeholder {
+	color: #BFF199;
+}
+
+/*
+
+Blue text
+
+*/
+
+.text-blue {
+	border: 0.1rem solid #1CB0F6;
+	padding: 0.7rem;
+	border-radius: 0.8rem;
+	color: #1CB0F6;
+	background-color: #FFF;
+}
+
+.text-blue::-webkit-input-placeholder {
+	color: #BCE9FF;
+}
+
+.text-blue:-ms-input-placeholder {
+	color: #BCE9FF;
+}
+
+.text-blue::-ms-input-placeholder {
+	color: #BCE9FF;
+}
+
+.text-blue::placeholder {
+	color: #BCE9FF;
+}
+
+/*
+
+Red text
+
+*/
+
+.text-red {
+	border: 0.1rem solid hsl(0, 65%, 51%);
+	padding: 0.7rem;
+	border-radius: 0.8rem;
+	color: #D33131;
+	background-color: #FFF;
+}
+
+.text-red::-webkit-input-placeholder {
+	color: #fecccc;
+}
+
+.text-red:-ms-input-placeholder {
+	color: #fecccc;
+}
+
+.text-red::-ms-input-placeholder {
+	color: #fecccc;
+}
+
+.text-red::placeholder {
+	color: #fecccc;
+}
+
+/*
+
+Orange text
+
+*/
+
+.text-orange {
+	border: 0.1rem solid #FA811B;
+	padding: 0.7rem;
+	border-radius: 0.8rem;
+	color: #FA811B;
+	background-color: #FFF;
+}
+
+.text-orange::-webkit-input-placeholder {
+	color: #fee2ae;
+}
+
+.text-orange:-ms-input-placeholder {
+	color: #fee2ae;
+}
+
+.text-orange::-ms-input-placeholder {
+	color: #fee2ae;
+}
+
+.text-orange::placeholder {
+	color: #fee2ae;
+}
+
+/*
+
+Generic rounded box
+
+*/
+
+.box {
+	padding: 2rem;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	border: 0.1rem solid #DDD;
+	border-radius: 0.8rem;
+}
+
+/********************************************
+
+Useful classes
+
+********************************************/
+
+.m-1 { margin: 1rem; }
+.m-2 { margin: 2rem; }
+.m-3 { margin: 3rem; }
+.m-4 { margin: 4rem; }
+
+.p-1 { padding: 1rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+.p-4 { padding: 4rem; }
+
+
+.ml-1 { margin-left: 1rem; }
+.ml-2 { margin-left: 2rem; }
+.ml-3 { margin-left: 3rem; }
+.ml-4 { margin-left: 4rem; }
+
+.mr-1 { margin-right: 1rem; }
+.mr-2 { margin-right: 2rem; }
+.mr-3 { margin-right: 3rem; }
+.mr-4 { margin-right: 4rem; }
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+.mt-4 { margin-top: 4rem; }
+
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+.mb-4 { margin-bottom: 4rem; }
+
+
+.pl-1 { padding-left: 1rem; }
+.pl-2 { padding-left: 2rem; }
+.pl-3 { padding-left: 3rem; }
+.pl-4 { padding-left: 4rem; }
+
+.pr-1 { padding-right: 1rem; }
+.pr-2 { padding-right: 2rem; }
+.pr-3 { padding-right: 3rem; }
+.pr-4 { padding-right: 4rem; }
+
+.pt-1 { padding-top: 1rem; }
+.pt-2 { padding-top: 2rem; }
+.pt-3 { padding-top: 3rem; }
+.pt-4 { padding-top: 4rem; }
+
+.pb-1 { padding-bottom: 1rem; }
+.pb-2 { padding-bottom: 2rem; }
+.pb-3 { padding-bottom: 3rem; }
+.pb-4 { padding-bottom: 4rem; }
+
+
+.w-25 { width: 25%; }
+.h-25 { width: 25%; }
+
+.w-50 { width: 50%; }
+.h-50 { width: 50%; }
+
+.w-100 { width: 100%; }
+.h-100 { width: 100%; }
+
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
