@@ -3,7 +3,6 @@
 ## Nice and non-serious web form controls (pure CSS)
 
 [![License](http://img.shields.io/:license-MIT-blue.svg)](https://github.com/tavuntu/niji/blob/master/LICENSE.md)
-[![Version](http://img.shields.io/:version-0.0.1-green.svg)](https://github.com/tavuntu/niji/blob/master/README.md)
 
 ### Screenshots
 
@@ -116,13 +115,4 @@ Code:
     </div>
     <label class="niji lbl-blue">Footer</label>
 </div>
-```
----
-Link tag:
-```html
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/tavuntu/niji/master/src/niji.css">
-```
-Minified:
-```html
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/tavuntu/niji/master/src/niji.min.css">
 ```
