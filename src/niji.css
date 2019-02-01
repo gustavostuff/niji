@@ -474,19 +474,19 @@ Red text
 }
 
 .text-red::-webkit-input-placeholder {
-	color: #fecccc;
+	color: #FECCCC;
 }
 
 .text-red:-ms-input-placeholder {
-	color: #fecccc;
+	color: #FECCCC;
 }
 
 .text-red::-ms-input-placeholder {
-	color: #fecccc;
+	color: #FECCCC;
 }
 
 .text-red::placeholder {
-	color: #fecccc;
+	color: #FECCCC;
 }
 
 /*
@@ -504,19 +504,19 @@ Orange text
 }
 
 .text-orange::-webkit-input-placeholder {
-	color: #fee2ae;
+	color: #FEE2AE;
 }
 
 .text-orange:-ms-input-placeholder {
-	color: #fee2ae;
+	color: #FEE2AE;
 }
 
 .text-orange::-ms-input-placeholder {
-	color: #fee2ae;
+	color: #FEE2AE;
 }
 
 .text-orange::placeholder {
-	color: #fee2ae;
+	color: #FEE2AE;
 }
 
 /*
@@ -594,13 +594,13 @@ Useful classes
 
 
 .w-25 { width: 25%; }
-.h-25 { width: 25%; }
+.h-25 { height: : 25%; }
 
 .w-50 { width: 50%; }
-.h-50 { width: 50%; }
+.h-50 { height: : 50%; }
 
 .w-100 { width: 100%; }
-.h-100 { width: 100%; }
+.h-100 { height: : 100%; }
 
 
 .text-center { text-align: center; }
