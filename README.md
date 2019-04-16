@@ -1,6 +1,6 @@
 # Niji
 
-## Nice and non-serious web form controls (pure CSS)
+## Non-serious styling for form controls
 
 [![License](http://img.shields.io/:license-MIT-blue.svg)](https://github.com/tavuntu/niji/blob/master/LICENSE.md)
 
