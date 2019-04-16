@@ -6,7 +6,7 @@
 
 ### Screenshots
 
-[![1.png](https://i.postimg.cc/bvZbGnJv/1.png)](https://postimg.cc/VSc5pdXy)
+[![1.png](https://i.postimg.cc/MZDsX95B/labels.png)](https://i.postimg.cc/MZDsX95B/labels.png)
 
 Code:
 ```html
@@ -16,20 +16,20 @@ Code:
     <label class="niji lbl">Default label</label>
 </p>
 <p>
-    <label class="niji lbl-green">Green label</label>
+    <label class="niji lbl lbl-green">Green label</label>
 </p>
 <p>
-    <label class="niji lbl-blue">Blue label</label>
+    <label class="niji lbl lbl-blue">Blue label</label>
 </p>
 <p>
-    <label class="niji lbl-red">Red label</label>
+    <label class="niji lbl lbl-red">Red label</label>
 </p>
 <p>
-    <label class="niji lbl-orange">Orange label</label>
+    <label class="niji lbl lbl-orange">Orange label</label>
 </p>
 ```
 ---
-[![buttons.gif](https://i.postimg.cc/5yVFkkmH/buttons.gif)](https://postimg.cc/34tRk1V7)
+[![buttons.gif](https://i.postimg.cc/GtcqqDL9/buttons.gif)](https://i.postimg.cc/GtcqqDL9/buttons.gif)
 
 Code:
 ```html
@@ -37,37 +37,38 @@ Code:
 
 <p>
     <button class="niji btn">Default button</button>
-    <input type="button" class="niji btn-green" value="Green button"></input>
-    <button class="niji btn-blue">Blue button</button>
+    <input type="button" class="niji btn btn-green" value="Green button"></input>
+    <button class="niji btn btn-blue">Blue button</button>
     <p>
-        <button class="niji btn-red">Red button</button>
+        <button class="niji btn btn-red">Red button</button>
     </p>
     <p>
-        <button class="niji btn-orange">Orange button</button>
+        <button class="niji btn btn-orange">Orange button</button>
     </p>
 </p>
 ```
 ---
-[![radio.gif](https://i.postimg.cc/qqxCfXm1/radio.gif)](https://postimg.cc/vxDmf9wn)
+[![radio.gif](https://i.postimg.cc/nhsTRpJK/radio.gif)](https://i.postimg.cc/nhsTRpJK/radio.gif)
 
 Code:
 ```html
 <h3 class="niji lbl w-100 text-center">Radio buttons</h3>
 
 <label class="niji lbl"> <u>Select your favorite color:</u></label>
-<div class="niji rad-green">
+
+<div class="niji rad rad-green">
     <input id="green" type="radio" name="favorite-color" value="green">
     <label for="green">Green</label>
 </div>
-<div class="niji rad-blue">
+<div class="niji rad rad-blue">
     <input id="blue" type="radio" name="favorite-color" value="blue" checked="checked">
     <label for="blue">Blue</label>
 </div>
-<div class="niji rad-red">
+<div class="niji rad rad-red">
     <input id="red" type="radio" name="favorite-color" value="red">
     <label for="red">Red</label>
 </div>
-<div class="niji rad-orange">
+<div class="niji rad rad-orange">
     <input id="orange" type="radio" name="favorite-color" value="orange">
     <label for="orange">Orange</label>
 </div>
@@ -77,7 +78,7 @@ Code:
 </div>
 ```
 ---
-[![text-boxes.gif](https://i.postimg.cc/W1Wgb8sK/text-boxes.gif)](https://postimg.cc/fVdJ8xtj)
+[![text-boxes.gif](https://i.postimg.cc/P5By09Xg/text.gif)](https://i.postimg.cc/P5By09Xg/text.gif)
 
 Code:
 ```html
@@ -87,32 +88,32 @@ Code:
     <input type="text" name="default" class="niji text" placeholder="placeholder" />
 </p>
 <p>
-    <input type="text" name="default" class="niji text-green" placeholder="placeholder" />
+    <input type="text" name="default" class="niji text text-green" placeholder="placeholder" />
 </p>
 <p>
-    <input type="text" name="default" class="niji text-blue" placeholder="placeholder" />
+    <input type="text" name="default" class="niji text text-blue" placeholder="placeholder" />
 </p>
 <p>
-    <input type="text" name="default" class="niji text-red" placeholder="placeholder" />
+    <input type="text" name="default" class="niji text text-red" placeholder="placeholder" />
 </p>
 <p>
-    <input type="text" name="default" class="niji text-orange" placeholder="placeholder" />
+    <input type="text" name="default" class="niji text text-orange" placeholder="placeholder" />
 </p>
 ```
 ---
-[![5.png](https://i.postimg.cc/8CxvLCJm/5.png)](https://postimg.cc/gwqrWmKx)
+[![5.png](https://i.postimg.cc/2y2TJ5yG/helpers.png)](https://i.postimg.cc/2y2TJ5yG/helpers.png)
 
 Code:
 ```html
 <h3 class="niji lbl w-100 text-center">Box containers and some helper classes</h3>
 
 <div class="box">
-    <label class="niji lbl-blue">Header line</label>
+    <label class="niji lbl lbl-blue">Header line</label>
     <button class="niji btn">Action</button>
     <div class="box mt-2 mb-2">
         <label class="niji lbl">Some field</label>
-        <input type="text" class="niji text-blue" placeholder="type here">
+        <input type="text" class="niji text text-blue" placeholder="type here">
     </div>
-    <label class="niji lbl-blue">Footer</label>
+    <label class="niji lbl lbl-blue">Footer</label>
 </div>
 ```

@@ -1,19 +1,22 @@
-/*
+/* Global styles */
 
-Open source font used for controls
+html, body {
+	background-color: #EEEEE4;
+}
 
-*/
+/* Open source font used for controls */
 
-@import url('https://fontlibrary.org/face/jellee-typeface');
+@font-face {
+    font-family: 'Jellee';
+    src: url('fonts/Jellee-Roman.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
-/*
-
-Base
-
-*/
+/* Base */
 
 .niji {
-	font-family: 'JelleeRoman'; 
+	font-family: 'Jellee'; 
 	font-weight: normal; 
 	font-style: normal; 
 	font-size: x-large;
@@ -32,58 +35,24 @@ Labels
 
 ********************************************/
 
-/*
-
-Default label
-
-*/
-
 .lbl {
 	padding: 0.7rem;
 	color: #777;
 }
 
-/*
-
-Green label
-
-*/
-
-.lbl-green {
-	padding: 0.7rem;
+.lbl.lbl-green {
 	color: #7AC70C;
 }
 
-/*
-
-Blue label
-
-*/
-
-.lbl-blue {
-	padding: 0.7rem;
+.lbl.lbl-blue {
 	color: #1CB0F6;
 }
 
-/*
-
-Red label
-
-*/
-
-.lbl-red {
-	padding: 0.7rem;
+.lbl.lbl-red {
 	color: #D33131;
 }
 
-/*
-
-Orange label
-
-*/
-
-.lbl-orange {
-	padding: 0.7rem;
+.lbl.lbl-orange {
 	color: #FA811B;
 }
 
@@ -92,13 +61,6 @@ Orange label
 Buttons
 
 ********************************************/
-
-
-/*
-
-Default button
-
-*/
 
 .btn {
 	border-radius: 0.8rem;
@@ -112,110 +74,34 @@ Default button
 	cursor: pointer;
 }
 
+.btn.btn-green {
+	border-color: #7AC70C;
+	color: #FFF;
+	background-color: #8EE000;
+}
+
+.btn.btn-blue {
+	border-color: #1CB0F6;
+	color: #FFF;
+	background-color: #14D4F4;
+}
+
+.btn.btn-red {
+	border-color: #D33131;
+	color: #FFF;
+	background-color: #E53B3B;
+}
+
+.btn.btn-orange {
+	border-color: #FA811B;
+	color: #FFF;
+	background-color: #FF9400;
+}
+
 .btn:active {
 	top: 0.4rem;
 	margin-bottom: 0.3rem;
-	border-bottom: 0.1rem solid #BBB;
-}
-
-/*
-
-Green button
-
-*/
-
-.btn-green {
-	border-radius: 0.8rem;
-	border-left: 0.1rem solid #7AC70C;
-	border-right: 0.1rem solid #7AC70C;
-	border-top: 0.1rem solid #7AC70C;
-	border-bottom: 0.4rem solid #7AC70C;
-	padding: 0.7rem;
-	color: #FFF;
-	background-color: #8EE000;
-	cursor: pointer;
-}
-
-.btn-green:active {
-	top: 0.4rem;
-	margin-bottom: 0.3rem;
-	border-bottom: 0.1rem solid #7AC70C;
-	background-color: #7AC70C;
-}
-
-/*
-
-Blue button
-
-*/
-
-.btn-blue {
-	border-radius: 0.8rem;
-	border-left: 0.1rem solid #1CB0F6;
-	border-right: 0.1rem solid #1CB0F6;
-	border-top: 0.1rem solid #1CB0F6;
-	border-bottom: 0.4rem solid #1CB0F6;
-	padding: 0.7rem;
-	color: #FFF;
-	background-color: #14D4F4;
-	cursor: pointer;
-}
-
-.btn-blue:active {
-	top: 0.4rem;
-	margin-bottom: 0.3rem;
-	border-bottom: 0.1rem solid #1CB0F6;
-	background-color: #1CB0F6;
-}
-
-/*
-
-Red button
-
-*/
-
-.btn-red {
-	border-radius: 0.8rem;
-	border-left: 0.1rem solid #D33131;
-	border-right: 0.1rem solid #D33131;
-	border-top: 0.1rem solid #D33131;
-	border-bottom: 0.4rem solid #D33131;
-	padding: 0.7rem;
-	color: #FFF;
-	background-color: #E53B3B;
-	cursor: pointer;
-}
-
-.btn-red:active {
-	top: 0.4rem;
-	margin-bottom: 0.3rem;
-	border-bottom: 0.1rem solid #D33131;
-	background-color: #D33131;
-}
-
-/*
-
-Orange button
-
-*/
-
-.btn-orange {
-	border-radius: 0.8rem;
-	border-left: 0.1rem solid #FA811B;
-	border-right: 0.1rem solid #FA811B;
-	border-top: 0.1rem solid #FA811B;
-	border-bottom: 0.4rem solid #FA811B;
-	padding: 0.7rem;
-	color: #FFF;
-	background-color: #FF9400;
-	cursor: pointer;
-}
-
-.btn-orange:active {
-	top: 0.4rem;
-	margin-bottom: 0.3rem;
-	border-bottom: 0.1rem solid #FA811B;
-	background-color: #FA811B;
+	border-bottom-width: 0.1rem;
 }
 
 /********************************************
@@ -242,125 +128,33 @@ Radio buttons
 }
 
 .rad input[type="radio"]:checked + label {
-	font-size: 3rem;
+	font-size: 2.3rem;
 	text-decoration: underline;
 	opacity: 1;
 }
 
-/*
+/* Green radio */
 
-Green radio
-
-*/
-
-.rad-green {
-	padding: 0.7rem;
+.rad.rad-green {
 	color: #7AC70C;
 }
 
-.rad-green label {
-	cursor: pointer;
-}
+/* Blue radio */
 
-.rad-green label:hover {
-	text-decoration: underline;
-}
-
-.rad-green input[type=radio] {
-	display: none;
-}
-
-.rad-green input[type="radio"]:checked + label {
-	font-size: 3rem;
-	text-decoration: underline;
-	opacity: 1;
-}
-
-/*
-
-Blue radio
-
-*/
-
-.rad-blue {
-	padding: 0.7rem;
+.rad.rad-blue {
 	color: #1CB0F6;
 }
 
-.rad-blue label {
-	cursor: pointer;
-}
+/* Red radio */
 
-.rad-blue label:hover {
-	text-decoration: underline;
-}
-
-.rad-blue input[type="radio"] {
-	display: none;
-}
-
-.rad-blue input[type="radio"]:checked + label {
-	font-size: 3rem;
-	text-decoration: underline;
-	opacity: 1;
-}
-
-/*
-
-Red radio
-
-*/
-
-.rad-red {
-	padding: 0.7rem;
+.rad.rad-red {
 	color: #D33131;
 }
 
-.rad-red label {
-	cursor: pointer;
-}
+/* Orange radio */
 
-.rad-red label:hover {
-	text-decoration: underline;
-}
-
-.rad-red input[type="radio"] {
-	display: none;
-}
-
-.rad-red input[type="radio"]:checked + label {
-	font-size: 3rem;
-	text-decoration: underline;
-	opacity: 1;
-}
-
-/*
-
-Orange radio
-
-*/
-
-.rad-orange {
-	padding: 0.7rem;
+.rad.rad-orange {
 	color: #FA811B;
-}
-
-.rad-orange label {
-	cursor: pointer;
-}
-
-.rad-orange label:hover {
-	text-decoration: underline;
-}
-
-.rad-orange input[type="radio"] {
-	display: none;
-}
-
-.rad-orange input[type="radio"]:checked + label {
-	font-size: 3rem;
-	text-decoration: underline;
-	opacity: 1;
 }
 
 /********************************************
@@ -368,12 +162,6 @@ Orange radio
 Text boxes
 
 ********************************************/
-
-/*
-
-Default text
-
-*/
 
 .text {
 	border: 0.1rem solid #AAA;
@@ -399,131 +187,103 @@ Default text
 	color: #DDD;
 }
 
-/*
+/* Green text */
 
-Green text
-
-*/
-
-.text-green {
+.text.text-green {
 	border: 0.1rem solid #7AC70C;
-	padding: 0.7rem;
-	border-radius: 0.8rem;
 	color: #7AC70C;
 	background-color: #FFF;
 }
 
-.text-green::-webkit-input-placeholder {
+.text.text-green::-webkit-input-placeholder {
 	color: #BFF199;
 }
 
-.text-green:-ms-input-placeholder {
+.text.text-green:-ms-input-placeholder {
 	color: #BFF199;
 }
 
-.text-green::-ms-input-placeholder {
+.text.text-green::-ms-input-placeholder {
 	color: #BFF199;
 }
 
-.text-green::placeholder {
+.text.text-green::placeholder {
 	color: #BFF199;
 }
 
-/*
+/* Blue text */
 
-Blue text
-
-*/
-
-.text-blue {
+.text.text-blue {
 	border: 0.1rem solid #1CB0F6;
-	padding: 0.7rem;
-	border-radius: 0.8rem;
 	color: #1CB0F6;
 	background-color: #FFF;
 }
 
-.text-blue::-webkit-input-placeholder {
+.text.text-blue::-webkit-input-placeholder {
 	color: #BCE9FF;
 }
 
-.text-blue:-ms-input-placeholder {
+.text.text-blue:-ms-input-placeholder {
 	color: #BCE9FF;
 }
 
-.text-blue::-ms-input-placeholder {
+.text.text-blue::-ms-input-placeholder {
 	color: #BCE9FF;
 }
 
-.text-blue::placeholder {
+.text.text-blue::placeholder {
 	color: #BCE9FF;
 }
 
-/*
+/* Red text */
 
-Red text
-
-*/
-
-.text-red {
-	border: 0.1rem solid hsl(0, 65%, 51%);
-	padding: 0.7rem;
-	border-radius: 0.8rem;
+.text.text-red {
+	border: 0.1rem solid #D33131;
 	color: #D33131;
 	background-color: #FFF;
 }
 
-.text-red::-webkit-input-placeholder {
+.text.text-red::-webkit-input-placeholder {
 	color: #FECCCC;
 }
 
-.text-red:-ms-input-placeholder {
+.text.text-red:-ms-input-placeholder {
 	color: #FECCCC;
 }
 
-.text-red::-ms-input-placeholder {
+.text.text-red::-ms-input-placeholder {
 	color: #FECCCC;
 }
 
-.text-red::placeholder {
+.text.text-red::placeholder {
 	color: #FECCCC;
 }
 
-/*
+/* Orange text */
 
-Orange text
-
-*/
-
-.text-orange {
+.text.text-orange {
 	border: 0.1rem solid #FA811B;
-	padding: 0.7rem;
-	border-radius: 0.8rem;
 	color: #FA811B;
 	background-color: #FFF;
 }
 
-.text-orange::-webkit-input-placeholder {
+.text.text-orange::-webkit-input-placeholder {
 	color: #FEE2AE;
 }
 
-.text-orange:-ms-input-placeholder {
+.text.text-orange:-ms-input-placeholder {
 	color: #FEE2AE;
 }
 
-.text-orange::-ms-input-placeholder {
+.text.text-orange::-ms-input-placeholder {
 	color: #FEE2AE;
 }
 
-.text-orange::placeholder {
+.text.text-orange::placeholder {
 	color: #FEE2AE;
 }
 
-/*
-
-Generic rounded box
-
-*/
+/* Generic rounded box */
 
 .box {
 	padding: 2rem;
@@ -549,7 +309,6 @@ Useful classes
 .p-2 { padding: 2rem; }
 .p-3 { padding: 3rem; }
 .p-4 { padding: 4rem; }
-
 
 .ml-1 { margin-left: 1rem; }
 .ml-2 { margin-left: 2rem; }
@@ -592,16 +351,14 @@ Useful classes
 .pb-3 { padding-bottom: 3rem; }
 .pb-4 { padding-bottom: 4rem; }
 
-
 .w-25 { width: 25%; }
-.h-25 { height: : 25%; }
+.h-25 { height: 25%; }
 
 .w-50 { width: 50%; }
-.h-50 { height: : 50%; }
+.h-50 { height: 50%; }
 
 .w-100 { width: 100%; }
-.h-100 { height: : 100%; }
-
+.h-100 { height: 100%; }
 
 .text-center { text-align: center; }
 .text-right { text-align: right; }

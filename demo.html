@@ -1,69 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>kawit demo</title>
-	<style type="text/css">
-		html, body {
-			background-color: #EEEEE4;
-		}
-
-		.m-1 {
-			margin: 0.5rem;
-		}
-	</style>
-	
-	<link rel="stylesheet" type="text/css" href="src/niji.css">
+	<title>kawit demo</title>	
+	<link rel="stylesheet" type="text/css" href="src/niji.min.css">
 </head>
 <body>
-
 	<h3 class="niji lbl w-100 text-center">Labels</h3>
 
 	<p>
 		<label class="niji lbl">Default label</label>
 	</p>
 	<p>
-		<label class="niji lbl-green">Green label</label>
+		<label class="niji lbl lbl-green">Green label</label>
 	</p>
 	<p>
-		<label class="niji lbl-blue">Blue label</label>
+		<label class="niji lbl lbl-blue">Blue label</label>
 	</p>
 	<p>
-		<label class="niji lbl-red">Red label</label>
+		<label class="niji lbl lbl-red">Red label</label>
 	</p>
 	<p>
-		<label class="niji lbl-orange">Orange label</label>
+		<label class="niji lbl lbl-orange">Orange label</label>
 	</p>
 
 	<h3 class="niji lbl w-100 text-center">Buttons</h3>
 
 	<p>
 		<button class="niji btn">Default button</button>
-		<input type="button" class="niji btn-green" value="Green button"></input>
-		<button class="niji btn-blue">Blue button</button>
+		<input type="button" class="niji btn btn-green" value="Green button"></input>
+		<button class="niji btn btn-blue">Blue button</button>
 		<p>
-			<button class="niji btn-red">Red button</button>
+			<button class="niji btn btn-red">Red button</button>
 		</p>
 		<p>
-			<button class="niji btn-orange">Orange button</button>
+			<button class="niji btn btn-orange">Orange button</button>
 		</p>
 	</p>
 
 	<h3 class="niji lbl w-100 text-center">Radio buttons</h3>
 
 	<label class="niji lbl"> <u>Select your favorite color:</u></label>
-	<div class="niji rad-green">
+
+	<div class="niji rad rad-green">
 		<input id="green" type="radio" name="favorite-color" value="green">
 		<label for="green">Green</label>
 	</div>
-	<div class="niji rad-blue">
+	<div class="niji rad rad-blue">
 		<input id="blue" type="radio" name="favorite-color" value="blue" checked="checked">
 		<label for="blue">Blue</label>
 	</div>
-	<div class="niji rad-red">
+	<div class="niji rad rad-red">
 		<input id="red" type="radio" name="favorite-color" value="red">
 		<label for="red">Red</label>
 	</div>
-	<div class="niji rad-orange">
+	<div class="niji rad rad-orange">
 		<input id="orange" type="radio" name="favorite-color" value="orange">
 		<label for="orange">Orange</label>
 	</div>
@@ -78,29 +68,28 @@
 		<input type="text" name="default" class="niji text" placeholder="placeholder" />
 	</p>
 	<p>
-		<input type="text" name="default" class="niji text-green" placeholder="placeholder" />
+		<input type="text" name="default" class="niji text text-green" placeholder="placeholder" />
 	</p>
 	<p>
-		<input type="text" name="default" class="niji text-blue" placeholder="placeholder" />
+		<input type="text" name="default" class="niji text text-blue" placeholder="placeholder" />
 	</p>
 	<p>
-		<input type="text" name="default" class="niji text-red" placeholder="placeholder" />
+		<input type="text" name="default" class="niji text text-red" placeholder="placeholder" />
 	</p>
 	<p>
-		<input type="text" name="default" class="niji text-orange" placeholder="placeholder" />
+		<input type="text" name="default" class="niji text text-orange" placeholder="placeholder" />
 	</p>
 
 	<h3 class="niji lbl w-100 text-center">Box containers and some helper classes</h3>
 
 	<div class="box">
-		<label class="niji lbl-blue">Header line</label>
+		<label class="niji lbl lbl-blue">Header line</label>
 		<button class="niji btn">Action</button>
 		<div class="box mt-2 mb-2">
 			<label class="niji lbl">Some field</label>
-			<input type="text" class="niji text-blue" placeholder="type here">
+			<input type="text" class="niji text text-blue" placeholder="type here">
 		</div>
-		<label class="niji lbl-blue">Footer</label>
+		<label class="niji lbl lbl-blue">Footer</label>
 	</div>
-
 </body>
 </html>
