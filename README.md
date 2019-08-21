@@ -1,6 +1,6 @@
-# Niji
+[![niji.png](https://i.postimg.cc/Qtnp8yc8/niji.png)](https://postimg.cc/MMVcttsN)
 
-## Non-serious styling for form controls
+## Non-serious styling for HTML elements
 
 [![License](http://img.shields.io/:license-MIT-blue.svg)](https://github.com/tavuntu/niji/blob/master/LICENSE.md)
 
