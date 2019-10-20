@@ -1,4 +1,4 @@
-[![niji.png](https://i.postimg.cc/Qtnp8yc8/niji.png)](https://postimg.cc/MMVcttsN)
+[![niji.png](https://i.postimg.cc/DfgkZTWM/niji.png)](https://postimg.cc/w37bfnQX)
 
 ## Non-serious styling for HTML elements
 
