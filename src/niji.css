@@ -1,32 +1,52 @@
-/* Global styles */
 
-html, body {
-	background-color: #EEEEE4;
+/*
+
+Copyright 2019 Gustavo Lara
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*/
+
+:root .niji {
+  --border-radius: 0.8rem;
+  --gray: #7f7f7f;
+  --light-gray: #c8c8c8;
+  --white: #ffffff;
+  --green: #7AC70C;
+  --light-green: #8EE000;
+  --lighter-green: #BFF199;
+  --blue: #1CB0F6;
+  --light-blue: #14D4F4;
+  --lighter-blue: #BCE9FF;
+  --red: #D33131;
+  --light-red: #e95959;
+  --pink: #FECCCC;
+  --orange: #FF9400;
+  --light-orange: #ffb44a;
+  --lighter-orange: #ffd292;
 }
 
-/* Open source font used for controls */
+/*
+
+Open source font https://dafonttop.com/jellee-roman.font
+
+*/
 
 @font-face {
-    font-family: 'Jellee';
-    src: url('fonts/Jellee-Roman.otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Jellee';
+  src: url('fonts/Jellee-Roman.otf');
+  size-adjust: 160%;
 }
 
 /* Base */
 
 .niji {
-	font-family: 'Jellee'; 
-	font-weight: normal; 
-	font-style: normal; 
-	font-size: x-large;
+  font-family: 'Jellee'; 
 	position: relative;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
 }
 
 /********************************************
@@ -37,24 +57,29 @@ Labels
 
 .lbl {
 	padding: 0.7rem;
-	color: #777;
+	color: var(--gray);
 }
 
 .lbl.lbl-green {
-	color: #7AC70C;
+	color: var(--green);
 }
 
 .lbl.lbl-blue {
-	color: #1CB0F6;
+	color: var(--blue);
 }
 
 .lbl.lbl-red {
-	color: #D33131;
+	color: var(--red);
 }
 
 .lbl.lbl-orange {
-	color: #FA811B;
+	color: var(--orange);
 }
+
+.lbl.disabled {
+  color: var(--gray);
+}
+
 
 /********************************************
 
@@ -63,45 +88,52 @@ Buttons
 ********************************************/
 
 .btn {
-	border-radius: 0.8rem;
-	border-left: 0.1rem solid #AAA;
-	border-right: 0.1rem solid #AAA;
-	border-top: 0.1rem solid #AAA;
-	border-bottom: 0.4rem solid #AAA;
-	padding: 0.7rem;
-	color: #777;
-	background-color: #FFF;
+	border-radius: var(--border-radius);
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 0.4rem solid var(--light-gray);
+	padding: 0.7rem 2rem 0.7rem 2rem;
+	color: var(--gray);
+	background-color: var(--white);
 	cursor: pointer;
 }
 
 .btn.btn-green {
-	border-color: #7AC70C;
-	color: #FFF;
-	background-color: #8EE000;
+	border-color: var(--green);
+	color: var(--white);
+	background-color: var(--light-green);
 }
 
 .btn.btn-blue {
-	border-color: #1CB0F6;
-	color: #FFF;
-	background-color: #14D4F4;
+	border-color: var(--blue);
+	color: var(--white);
+	background-color: var(--light-blue);
 }
 
 .btn.btn-red {
-	border-color: #D33131;
-	color: #FFF;
-	background-color: #E53B3B;
+	border-color: var(--red);
+	color: var(--white);
+	background-color: var(--light-red);
 }
 
 .btn.btn-orange {
-	border-color: #FA811B;
-	color: #FFF;
-	background-color: #FF9400;
+	border-color: var(--orange);
+	color: var(--white);
+	background-color: var(--light-orange);
 }
 
-.btn:active {
+.btn:not(.disabled):active {
 	top: 0.4rem;
-	margin-bottom: 0.3rem;
-	border-bottom-width: 0.1rem;
+	margin-bottom: 0.4rem;
+	border-bottom-width: 0;
+}
+
+.btn.disabled {
+  background-color: var(--light-gray);
+  color: var(--gray);
+  border-bottom: 0.4rem;
+  top: 0.4rem;
 }
 
 /********************************************
@@ -112,7 +144,7 @@ Radio buttons
 
 .rad {
 	padding: 0.7rem;
-	color: #777;
+	color: var(--gray);
 }
 
 .rad label {
@@ -121,6 +153,8 @@ Radio buttons
 
 .rad label:hover {
 	text-decoration: underline;
+  text-decoration-thickness: 0.4rem;
+  text-underline-offset: 0.4rem;
 }
 
 .rad input[type=radio] {
@@ -128,33 +162,43 @@ Radio buttons
 }
 
 .rad input[type="radio"]:checked + label {
-	font-size: 2.3rem;
+	font-size: 1.5rem;
 	text-decoration: underline;
+  text-decoration-thickness: 0.4rem;
+  text-underline-offset: 0.4rem;
 	opacity: 1;
 }
 
 /* Green radio */
 
 .rad.rad-green {
-	color: #7AC70C;
+	color: var(--green);
 }
 
 /* Blue radio */
 
 .rad.rad-blue {
-	color: #1CB0F6;
+	color: var(--blue);
 }
 
 /* Red radio */
 
 .rad.rad-red {
-	color: #D33131;
+	color: var(--red);
 }
 
 /* Orange radio */
 
 .rad.rad-orange {
-	color: #FA811B;
+	color: var(--orange)
+}
+
+.rad input[type="radio"][disabled] + label {
+  color: var(--gray);
+}
+
+.rad input[type="radio"][disabled]:not(:checked) + label:hover {
+  text-decoration: none;
 }
 
 /********************************************
@@ -164,134 +208,169 @@ Text boxes
 ********************************************/
 
 .text {
-	border: 0.1rem solid #AAA;
+	border: 0.4rem solid;
 	padding: 0.7rem;
-	border-radius: 0.8rem;
-	color: #777;
-	background-color: #FFF;
+	border-radius: var(--border-radius);
+	color: var(--gray);
+	background-color: var(--white);
 }
 
 .text::-webkit-input-placeholder {
-	color: #DDD;
+	color: var(--light-gray);
+}
+
+.text::-moz-placeholder {
+	color: var(--light-gray);
 }
 
 .text:-ms-input-placeholder {
-	color: #DDD;
+	color: var(--light-gray);
 }
 
 .text::-ms-input-placeholder {
-	color: #DDD;
+	color: var(--light-gray);
 }
 
 .text::placeholder {
-	color: #DDD;
+	color: var(--light-gray);
 }
 
 /* Green text */
 
 .text.text-green {
-	border: 0.1rem solid #7AC70C;
-	color: #7AC70C;
-	background-color: #FFF;
+	border-color: var(--green);
+	color: var(--light-green);
+	background-color: var(--white);
 }
 
 .text.text-green::-webkit-input-placeholder {
-	color: #BFF199;
+	color: var(--lighter-green);
+}
+
+.text.text-green::-moz-placeholder {
+	color: var(--lighter-green);
 }
 
 .text.text-green:-ms-input-placeholder {
-	color: #BFF199;
+	color: var(--lighter-green);
 }
 
 .text.text-green::-ms-input-placeholder {
-	color: #BFF199;
+	color: var(--lighter-green);
 }
 
 .text.text-green::placeholder {
-	color: #BFF199;
+	color: var(--lighter-green);
 }
 
 /* Blue text */
 
 .text.text-blue {
-	border: 0.1rem solid #1CB0F6;
-	color: #1CB0F6;
-	background-color: #FFF;
+	border-color: var(--blue);
+  color: var(--blue);
+	background-color: var(--white);
 }
 
 .text.text-blue::-webkit-input-placeholder {
-	color: #BCE9FF;
+	color: var(--lighter-blue);
+}
+
+.text.text-blue::-moz-placeholder {
+	color: var(--lighter-blue);
 }
 
 .text.text-blue:-ms-input-placeholder {
-	color: #BCE9FF;
+	color: var(--lighter-blue);
 }
 
 .text.text-blue::-ms-input-placeholder {
-	color: #BCE9FF;
+	color: var(--lighter-blue);
 }
 
 .text.text-blue::placeholder {
-	color: #BCE9FF;
+	color: var(--lighter-blue);
 }
 
 /* Red text */
 
 .text.text-red {
-	border: 0.1rem solid #D33131;
-	color: #D33131;
-	background-color: #FFF;
+	border-color: var(--red);
+  color: var(--red);
+	background-color: var(--white);
 }
 
 .text.text-red::-webkit-input-placeholder {
-	color: #FECCCC;
+	color: var(--pink);
+}
+
+.text.text-red::-moz-placeholder {
+	color: var(--pink);
 }
 
 .text.text-red:-ms-input-placeholder {
-	color: #FECCCC;
+	color: var(--pink);
 }
 
 .text.text-red::-ms-input-placeholder {
-	color: #FECCCC;
+	color: var(--pink);
 }
 
 .text.text-red::placeholder {
-	color: #FECCCC;
+	color: var(--pink);
 }
 
 /* Orange text */
 
 .text.text-orange {
-	border: 0.1rem solid #FA811B;
-	color: #FA811B;
-	background-color: #FFF;
+	border-color: var(--orange);
+	color: var(--orange);
+	background-color: var(--white);
 }
 
 .text.text-orange::-webkit-input-placeholder {
-	color: #FEE2AE;
+	color: var(--lighter-orange);
+}
+
+.text.text-orange::-moz-placeholder {
+	color: var(--lighter-orange);
 }
 
 .text.text-orange:-ms-input-placeholder {
-	color: #FEE2AE;
+	color: var(--lighter-orange);
 }
 
 .text.text-orange::-ms-input-placeholder {
-	color: #FEE2AE;
+	color: var(--lighter-orange);
 }
 
 .text.text-orange::placeholder {
-	color: #FEE2AE;
+	color: var(--lighter-orange);
 }
 
-/* Generic rounded box */
+.text[disabled] {
+  border-color: var(--gray);
+  color: var(--gray);
+  background-color: var(--light-gray);
+}
 
-.box {
-	padding: 2rem;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	border: 0.1rem solid #DDD;
-	border-radius: 0.8rem;
+.text[disabled]::-webkit-input-placeholder {
+	color: var(--gray);
+}
+
+.text[disabled]::-moz-placeholder {
+	color: var(--gray);
+}
+
+.text[disabled]:-ms-input-placeholder {
+	color: var(--gray);
+}
+
+.text[disabled]::-ms-input-placeholder {
+	color: var(--gray);
+}
+
+.text[disabled]::placeholder {
+	color: var(--gray);
 }
 
 /********************************************
