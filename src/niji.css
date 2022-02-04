@@ -46,7 +46,7 @@ Open source font https://dafonttop.com/jellee-roman.font
 
 .niji {
   font-family: 'Jellee'; 
-	position: relative;
+  position: relative;
 }
 
 /********************************************
@@ -56,24 +56,24 @@ Labels
 ********************************************/
 
 .lbl {
-	padding: 0.7rem;
-	color: var(--gray);
+  padding: 0.7rem;
+  color: var(--gray);
 }
 
 .lbl.lbl-green {
-	color: var(--green);
+  color: var(--green);
 }
 
 .lbl.lbl-blue {
-	color: var(--blue);
+  color: var(--blue);
 }
 
 .lbl.lbl-red {
-	color: var(--red);
+  color: var(--red);
 }
 
 .lbl.lbl-orange {
-	color: var(--orange);
+  color: var(--orange);
 }
 
 .lbl.disabled {
@@ -88,45 +88,45 @@ Buttons
 ********************************************/
 
 .btn {
-	border-radius: var(--border-radius);
-	border-left: 0;
-	border-right: 0;
-	border-top: 0;
-	border-bottom: 0.4rem solid var(--light-gray);
-	padding: 0.7rem 2rem 0.7rem 2rem;
-	color: var(--gray);
-	background-color: var(--white);
-	cursor: pointer;
+  border-radius: var(--border-radius);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0.4rem solid var(--light-gray);
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  color: var(--gray);
+  background-color: var(--white);
+  cursor: pointer;
 }
 
 .btn.btn-green {
-	border-color: var(--green);
-	color: var(--white);
-	background-color: var(--light-green);
+  border-color: var(--green);
+  color: var(--white);
+  background-color: var(--light-green);
 }
 
 .btn.btn-blue {
-	border-color: var(--blue);
-	color: var(--white);
-	background-color: var(--light-blue);
+  border-color: var(--blue);
+  color: var(--white);
+  background-color: var(--light-blue);
 }
 
 .btn.btn-red {
-	border-color: var(--red);
-	color: var(--white);
-	background-color: var(--light-red);
+  border-color: var(--red);
+  color: var(--white);
+  background-color: var(--light-red);
 }
 
 .btn.btn-orange {
-	border-color: var(--orange);
-	color: var(--white);
-	background-color: var(--light-orange);
+  border-color: var(--orange);
+  color: var(--white);
+  background-color: var(--light-orange);
 }
 
 .btn:not(.disabled):active {
-	top: 0.4rem;
-	margin-bottom: 0.4rem;
-	border-bottom-width: 0;
+  top: 0.4rem;
+  margin-bottom: 0.4rem;
+  border-bottom-width: 0;
 }
 
 .btn.disabled {
@@ -143,54 +143,54 @@ Radio buttons
 ********************************************/
 
 .rad {
-	padding: 0.7rem;
-	color: var(--gray);
+  padding: 0.7rem;
+  color: var(--gray);
 }
 
 .rad label {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .rad label:hover {
-	text-decoration: underline;
+  text-decoration: underline;
   text-decoration-thickness: 0.4rem;
   text-underline-offset: 0.4rem;
 }
 
 .rad input[type=radio] {
-	display: none;
+  display: none;
 }
 
 .rad input[type="radio"]:checked + label {
-	font-size: 1.5rem;
-	text-decoration: underline;
+  font-size: 1.5rem;
+  text-decoration: underline;
   text-decoration-thickness: 0.4rem;
   text-underline-offset: 0.4rem;
-	opacity: 1;
+  opacity: 1;
 }
 
 /* Green radio */
 
 .rad.rad-green {
-	color: var(--green);
+  color: var(--green);
 }
 
 /* Blue radio */
 
 .rad.rad-blue {
-	color: var(--blue);
+  color: var(--blue);
 }
 
 /* Red radio */
 
 .rad.rad-red {
-	color: var(--red);
+  color: var(--red);
 }
 
 /* Orange radio */
 
 .rad.rad-orange {
-	color: var(--orange)
+  color: var(--orange)
 }
 
 .rad input[type="radio"][disabled] + label {
@@ -208,143 +208,143 @@ Text boxes
 ********************************************/
 
 .text {
-	border: 0.4rem solid;
-	padding: 0.7rem;
-	border-radius: var(--border-radius);
-	color: var(--gray);
-	background-color: var(--white);
+  border: 0.4rem solid;
+  padding: 0.7rem;
+  border-radius: var(--border-radius);
+  color: var(--gray);
+  background-color: var(--white);
 }
 
 .text::-webkit-input-placeholder {
-	color: var(--light-gray);
+  color: var(--light-gray);
 }
 
 .text::-moz-placeholder {
-	color: var(--light-gray);
+  color: var(--light-gray);
 }
 
 .text:-ms-input-placeholder {
-	color: var(--light-gray);
+  color: var(--light-gray);
 }
 
 .text::-ms-input-placeholder {
-	color: var(--light-gray);
+  color: var(--light-gray);
 }
 
 .text::placeholder {
-	color: var(--light-gray);
+  color: var(--light-gray);
 }
 
 /* Green text */
 
 .text.text-green {
-	border-color: var(--green);
-	color: var(--light-green);
-	background-color: var(--white);
+  border-color: var(--green);
+  color: var(--light-green);
+  background-color: var(--white);
 }
 
 .text.text-green::-webkit-input-placeholder {
-	color: var(--lighter-green);
+  color: var(--lighter-green);
 }
 
 .text.text-green::-moz-placeholder {
-	color: var(--lighter-green);
+  color: var(--lighter-green);
 }
 
 .text.text-green:-ms-input-placeholder {
-	color: var(--lighter-green);
+  color: var(--lighter-green);
 }
 
 .text.text-green::-ms-input-placeholder {
-	color: var(--lighter-green);
+  color: var(--lighter-green);
 }
 
 .text.text-green::placeholder {
-	color: var(--lighter-green);
+  color: var(--lighter-green);
 }
 
 /* Blue text */
 
 .text.text-blue {
-	border-color: var(--blue);
+  border-color: var(--blue);
   color: var(--blue);
-	background-color: var(--white);
+  background-color: var(--white);
 }
 
 .text.text-blue::-webkit-input-placeholder {
-	color: var(--lighter-blue);
+  color: var(--lighter-blue);
 }
 
 .text.text-blue::-moz-placeholder {
-	color: var(--lighter-blue);
+  color: var(--lighter-blue);
 }
 
 .text.text-blue:-ms-input-placeholder {
-	color: var(--lighter-blue);
+  color: var(--lighter-blue);
 }
 
 .text.text-blue::-ms-input-placeholder {
-	color: var(--lighter-blue);
+  color: var(--lighter-blue);
 }
 
 .text.text-blue::placeholder {
-	color: var(--lighter-blue);
+  color: var(--lighter-blue);
 }
 
 /* Red text */
 
 .text.text-red {
-	border-color: var(--red);
+  border-color: var(--red);
   color: var(--red);
-	background-color: var(--white);
+  background-color: var(--white);
 }
 
 .text.text-red::-webkit-input-placeholder {
-	color: var(--pink);
+  color: var(--pink);
 }
 
 .text.text-red::-moz-placeholder {
-	color: var(--pink);
+  color: var(--pink);
 }
 
 .text.text-red:-ms-input-placeholder {
-	color: var(--pink);
+  color: var(--pink);
 }
 
 .text.text-red::-ms-input-placeholder {
-	color: var(--pink);
+  color: var(--pink);
 }
 
 .text.text-red::placeholder {
-	color: var(--pink);
+  color: var(--pink);
 }
 
 /* Orange text */
 
 .text.text-orange {
-	border-color: var(--orange);
-	color: var(--orange);
-	background-color: var(--white);
+  border-color: var(--orange);
+  color: var(--orange);
+  background-color: var(--white);
 }
 
 .text.text-orange::-webkit-input-placeholder {
-	color: var(--lighter-orange);
+  color: var(--lighter-orange);
 }
 
 .text.text-orange::-moz-placeholder {
-	color: var(--lighter-orange);
+  color: var(--lighter-orange);
 }
 
 .text.text-orange:-ms-input-placeholder {
-	color: var(--lighter-orange);
+  color: var(--lighter-orange);
 }
 
 .text.text-orange::-ms-input-placeholder {
-	color: var(--lighter-orange);
+  color: var(--lighter-orange);
 }
 
 .text.text-orange::placeholder {
-	color: var(--lighter-orange);
+  color: var(--lighter-orange);
 }
 
 .text[disabled] {
@@ -354,23 +354,23 @@ Text boxes
 }
 
 .text[disabled]::-webkit-input-placeholder {
-	color: var(--gray);
+  color: var(--gray);
 }
 
 .text[disabled]::-moz-placeholder {
-	color: var(--gray);
+  color: var(--gray);
 }
 
 .text[disabled]:-ms-input-placeholder {
-	color: var(--gray);
+  color: var(--gray);
 }
 
 .text[disabled]::-ms-input-placeholder {
-	color: var(--gray);
+  color: var(--gray);
 }
 
 .text[disabled]::placeholder {
-	color: var(--gray);
+  color: var(--gray);
 }
 
 /********************************************
