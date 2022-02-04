@@ -13,9 +13,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 :root .niji {
   --border-radius: 0.8rem;
-  --gray: #7f7f7f;
-  --light-gray: #c8c8c8;
-  --white: #ffffff;
+  --gray: #7F7F7F;
+  --light-gray: #C8C8C8;
+  --white: #FFFFFF;
   --green: #7AC70C;
   --light-green: #8EE000;
   --lighter-green: #BFF199;
@@ -23,11 +23,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   --light-blue: #14D4F4;
   --lighter-blue: #BCE9FF;
   --red: #D33131;
-  --light-red: #e95959;
+  --light-red: #E95959;
   --pink: #FECCCC;
   --orange: #FF9400;
-  --light-orange: #ffb44a;
-  --lighter-orange: #ffd292;
+  --light-orange: #FFB44A;
+  --lighter-orange: #FFD292;
 }
 
 /*
