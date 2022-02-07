@@ -16,159 +16,191 @@
       border-radius: 0.8rem;
     }
   </style>
-	<link rel="stylesheet" type="text/css" href="src/niji.min.css">
+	<link rel="stylesheet" type="text/css" href="src/niji.css">
+  <link rel="stylesheet" type="text/css" href="site.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1 class="niji lbl w-100 mt-1">Niji</h1>
+  <h1 class="niji lbl w-100 mt-1 text-center">Niji</h1>
+  <h3 class="niji lbl w-100 mt-1 text-center">Childish styling for HTML elements</h3>
 
-	<h3 class="niji lbl w-100 mt-1">Labels:</h3>
-
-	<p>
-		<label class="niji lbl">Default label</label>
-	</p>
-	<p>
-		<label class="niji lbl lbl-green">Green label</label>
-	</p>
-	<p>
-		<label class="niji lbl lbl-blue">Blue label</label>
-	</p>
-	<p>
-		<label class="niji lbl lbl-red">Red label</label>
-	</p>
-	<p>
-		<label class="niji lbl lbl-orange">Orange label</label>
-	</p>
-
-	<h3 class="niji lbl w-100 mt-3">Buttons:</h3>
-
-	<p>
-		<button class="niji btn mr-1">Default button</button>
-		<input type="button" class="niji btn btn-green mr-1" value="Green button"></input>
-		<button class="niji btn btn-blue">Blue button</button>
-		<p>
-			<button class="niji btn btn-red">Red button</button>
-		</p>
-		<p>
-			<button class="niji btn btn-orange">Orange button</button>
-		</p>
-	</p>
-
-	<h3 class="niji lbl w-100 mt-3">Selection list (radio buttons):</h3>
-
-	<div class="niji rad rad-green">
-		<input id="green" type="radio" name="favorite-color" value="green">
-		<label for="green">Green</label>
-	</div>
-	<div class="niji rad rad-blue">
-		<input id="blue" type="radio" name="favorite-color" value="blue" checked="checked">
-		<label for="blue">Blue</label>
-	</div>
-	<div class="niji rad rad-red">
-		<input id="red" type="radio" name="favorite-color" value="red">
-		<label for="red">Red</label>
-	</div>
-	<div class="niji rad rad-orange">
-		<input id="orange" type="radio" name="favorite-color" value="orange">
-		<label for="orange">Orange</label>
-	</div>
-	<div class="niji rad">
-		<input id="default" type="radio" name="favorite-color" value="default">
-		<label for="default">None of the above</label>
-	</div>
-
-	<h3 class="niji lbl w-100 mt-3">Text boxes:</h3>
-
-	<p>
-		<input type="text" name="default" class="niji text" placeholder="placeholder" />
-	</p>
-	<p>
-		<input type="text" name="default" class="niji text text-green" placeholder="placeholder" />
-	</p>
-	<p>
-		<input type="text" name="default" class="niji text text-blue" placeholder="placeholder" />
-	</p>
-	<p>
-		<input type="text" name="default" class="niji text text-red" placeholder="placeholder" />
-	</p>
-	<p>
-		<input type="text" name="default" class="niji text text-orange" placeholder="placeholder" />
-	</p>
-
-	<h3 class="niji lbl w-100 mt-3">Box containers and some helper classes:</h3>
-
-	<div class="box w-50">
-		<label class="niji lbl lbl-blue">Header line</label>
-		<button class="niji btn">Action</button>
-		<div class="box mt-2 mb-2">
-			<label class="niji lbl">Some field</label>
-			<input type="text" class="niji text text-blue" placeholder="type here">
-		</div>
-		<label class="niji lbl lbl-blue">Footer</label>
-	</div>
-
-  <h3 class="niji lbl w-100">Disabled elements:</h3>
-
-  <p>
-		<label class="niji lbl disabled">Disabled default label</label>
-	</p>
-	<p>
-		<label class="niji lbl lbl-green disabled">Disabled green label</label>
-	</p>
-	<p>
-		<label class="niji lbl lbl-blue disabled">Disabled blue label</label>
-	</p>
-	<p>
-		<label class="niji lbl lbl-red disabled">Disabled red label</label>
-	</p>
-	<p>
-		<label class="niji lbl lbl-orange disabled">Disabled orange label</label>
-	</p>
-
-  <p>
-    <button class="niji btn disabled mr-1  mb-1 mb-1">Disabled default button</button>
-    <button class="niji btn btn-green disabled mr-1  mb-1">Disabled green button</button>
-    <button class="niji btn btn-blue disabled mr-1  mb-1">Disabled blue button</button>
-    <button class="niji btn btn-red disabled mr-1  mb-1">Disabled red button</button>
-    <button class="niji btn btn-orange disabled mb-1">Disabled orange button</button>
-  </p>
-
-  <p class="mt-3">
-    <div class="niji rad rad-green">
-      <input id="green" type="radio" name="disabled-list" value="green" disabled>
-      <label for="green">This is a</label>
+  <div class="sections">
+    <div class="section">
+      <div class="niji lbl w-100 text-center">Labels</div>
+      <p>
+        <label class="niji lbl">Default label</label>
+      </p>
+      <p>
+        <label class="niji lbl lbl-green">Green label</label>
+      </p>
+      <p>
+        <label class="niji lbl lbl-blue">Blue label</label>
+      </p>
+      <p>
+        <label class="niji lbl lbl-red">Red label</label>
+      </p>
+      <p>
+        <label class="niji lbl lbl-orange">Orange label</label>
+      </p>
     </div>
-    <div class="niji rad rad-blue">
-      <input id="blue" type="radio" name="disabled-list" value="blue" checked="checked" disabled>
-      <label for="blue">disabled list selection</label>
-    </div>
-    <div class="niji rad rad-red">
-      <input id="red" type="radio" name="disabled-list" value="red" disabled>
-      <label for="red">with</label>
-    </div>
-    <div class="niji rad rad-orange">
-      <input id="orange" type="radio" name="disabled-list" value="orange" disabled>
-      <label for="orange">one item</label>
-    </div>
-    <div class="niji rad">
-      <input id="default" type="radio" name="disabled-list" value="default" disabled>
-      <label for="default">already selected</label>
-    </div>
-  </p>
 
-  <p>
-		<input type="text" disabled name="default" class="niji text w-25" placeholder="Disabled default textfield" />
-	</p>
-	<p>
-		<input type="text" disabled name="default" class="niji text text-green w-25" placeholder="Disabled green textfield" />
-	</p>
-	<p>
-		<input type="text" disabled name="default" class="niji text text-blue w-25" placeholder="Disabled blue textfield" />
-	</p>
-	<p>
-		<input type="text" disabled name="default" class="niji text text-red w-25" placeholder="Disabled red textfield" />
-	</p>
-	<p>
-		<input type="text" disabled name="default" class="niji text text-orange w-25" placeholder="Disabled orange textfield" />
-	</p>
+    <div class="section">
+      <div class="niji lbl w-100 text-center">Buttons</div>
+      <p>
+        <button class="niji btn">Default button</button>
+      </p>
+      <p>
+        <input type="button" class="niji btn btn-green" value="Green button"></input>
+      </p>
+      <p>
+        <button class="niji btn btn-blue">Blue button</button>
+      </p>
+      <p>
+        <button class="niji btn btn-red">Red button</button>
+      </p>
+      <p>
+        <button class="niji btn btn-orange">Orange button</button>
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="niji lbl w-100 text-center">Selection list</div>
+      <div class="niji rad rad-green">
+        <input id="green" type="radio" name="favorite-color" value="green">
+        <label for="green">Green</label>
+      </div>
+      <div class="niji rad rad-blue">
+        <input id="blue" type="radio" name="favorite-color" value="blue">
+        <label for="blue">Blue</label>
+      </div>
+      <div class="niji rad rad-red">
+        <input id="red" type="radio" name="favorite-color" value="red">
+        <label for="red">Red</label>
+      </div>
+      <div class="niji rad rad-orange">
+        <input id="orange" type="radio" name="favorite-color" value="orange">
+        <label for="orange">Orange</label>
+      </div>
+      <div class="niji rad">
+        <input id="gray" type="radio" name="favorite-color" value="gray">
+        <label for="gray">Gray</label>
+      </div>
+      <div class="niji rad rad-green">
+        <input id="some" type="radio" name="favorite-color" value="some">
+        <label for="some">Some</label>
+      </div>
+      <div class="niji rad rad-blue">
+        <input id="other" type="radio" name="favorite-color" value="other">
+        <label for="other">Other</label>
+      </div>
+      <div class="niji rad rad-red">
+        <input id="items" type="radio" name="favorite-color" value="items">
+        <label for="items">Items</label>
+      </div>
+    </div>
+
+    <div class="section text-center">
+      <div class="niji lbl w-100 text-center">Text boxes</div>
+      <p>
+        <input type="text" name="default" class="niji text" placeholder="placeholder" />
+      </p>
+      <p>
+        <input type="text" name="default" class="niji text text-green" placeholder="placeholder" />
+      </p>
+      <p>
+        <input type="text" name="default" class="niji text text-blue" placeholder="placeholder" />
+      </p>
+      <p>
+        <input type="text" name="default" class="niji text text-red" placeholder="placeholder" />
+      </p>
+      <p>
+        <input type="text" name="default" class="niji text text-orange" placeholder="placeholder" />
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="niji lbl w-100 text-center">Mixed stuff</div>
+      <div class="m-1">
+        <label class="niji lbl lbl-blue">Header line</label>
+        <button class="niji btn">Action</button>
+        <div class="box mt-2 mb-2">
+          <label class="niji lbl">Some field</label>
+          <input type="text" class="niji text text-blue" placeholder="type here">
+        </div>
+        <button class="niji btn btn-red mr-1">Cancel</button>
+        <button class="niji btn btn-green">OK</button>
+        <div class="mt-1">
+          <label class="niji lbl lbl-blue">Footer</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="section text-center">
+      <div class="niji lbl w-100 text-center">Bouncy balls</div>
+      <p>
+        <button class="niji ball ball-green mr-1"></button>
+        <button class="niji ball"></button>
+      </p>
+      <p>
+        <button class="niji ball ball-blue mr-1"></button>
+        <button class="niji ball ball-red"></button>
+      </p>
+      <p>
+        <button class="niji ball ball-orange mr-1"></button>
+        <button class="niji ball ball-green"></button>
+      </p>
+      <!-- just so the balls don't step on top of each other -->
+      <div style="width: 23rem;"></div>
+    </div>
+
+    <div class="section">
+      <div class="niji lbl">Disabled stuff</div>
+      <p>
+        <label class="niji lbl disabled">Disabled label</label>
+      </p>
+      <p>
+        <button class="niji btn disabled">Disabled button</button>
+      </p>
+      <p>
+        <input type="text" disabled name="default" class="niji text text-orange w-100" placeholder="Disabled textfield" />
+      </p>
+      <p>
+        <button class="niji ball ball-blue disabled"></button>
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="niji rad rad-green">
+        <input id="green" type="radio" name="disabled-list" value="green" disabled>
+        <label for="green">This is a</label>
+      </div>
+      <div class="niji rad rad-blue">
+        <input id="blue" type="radio" name="disabled-list" value="blue" checked="checked" disabled>
+        <label for="blue">disabled list</label>
+      </div>
+      <div class="niji rad rad-red">
+        <input id="red" type="radio" name="disabled-list" value="red" disabled>
+        <label for="red">with</label>
+      </div>
+      <div class="niji rad rad-orange">
+        <input id="orange" type="radio" name="disabled-list" value="orange" disabled>
+        <label for="orange">one item</label>
+      </div>
+      <div class="niji rad">
+        <input id="default" type="radio" name="disabled-list" value="default" disabled>
+        <label for="default">already selected</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="niji lbl lbl-white">
+      Niji is free to use under
+      <a href="https://github.com/tavuntu/niji/blob/master/LICENSE.md">MIT</a>,
+      check out the source code and examples at
+      <a href="https://github.com/tavuntu/niji">GitHub</a>
+    </div>
+    
+  </div>
 </body>
 </html>

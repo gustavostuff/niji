@@ -13,9 +13,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 :root .niji {
   --border-radius: 0.8rem;
+  --standard-border: 0.4rem;
+  --standard-padding: 0.7rem;
+  --standard-margin: 0.7rem;
+
+  --standard-animation-speed: 300ms;
+
+  --radial-position: 45% 15%;
+
   --gray: #7F7F7F;
   --light-gray: #C8C8C8;
+  --lighter-gray: #E4E4E4;
   --white: #FFFFFF;
+  --translucent-white: #FFFFFFCC;
   --green: #7AC70C;
   --light-green: #8EE000;
   --lighter-green: #BFF199;
@@ -47,6 +57,8 @@ Open source font https://dafonttop.com/jellee-roman.font
 .niji {
   font-family: 'Jellee'; 
   position: relative;
+  user-select: none;
+  box-sizing: border-box;
 }
 
 /********************************************
@@ -56,7 +68,7 @@ Labels
 ********************************************/
 
 .lbl {
-  padding: 0.7rem;
+  padding: var(--standard-padding);
   color: var(--gray);
 }
 
@@ -76,8 +88,12 @@ Labels
   color: var(--orange);
 }
 
+.lbl.lbl-white {
+  color: var(--lighter-gray);
+}
+
 .lbl.disabled {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 
@@ -92,11 +108,12 @@ Buttons
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  border-bottom: 0.4rem solid var(--light-gray);
-  padding: 0.7rem 2rem 0.7rem 2rem;
+  border-bottom: var(--standard-border) solid var(--light-gray);
+  padding: var(--standard-padding) 2rem var(--standard-padding) 2rem;
   color: var(--gray);
   background-color: var(--white);
   cursor: pointer;
+  font-size: 1rem; /* Same size as labels */
 }
 
 .btn.btn-green {
@@ -124,16 +141,112 @@ Buttons
 }
 
 .btn:not(.disabled):active {
-  top: 0.4rem;
+  top: var(--standard-border);
   margin-bottom: 0.4rem;
   border-bottom-width: 0;
 }
 
 .btn.disabled {
-  background-color: var(--light-gray);
+  background-color: var(--lighter-gray);
+  color: var(--light-gray);
+  border-bottom-color: var(--light-gray);
+}
+
+/********************************************
+
+Bauncy balls
+
+********************************************/
+
+.ball {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0.7rem solid var(--light-gray);
+  padding: var(--standard-padding) 2rem var(--standard-padding) 2rem;
   color: var(--gray);
-  border-bottom: 0.4rem;
-  top: 0.4rem;
+  background-color: var(--white);
+  cursor: pointer;
+  font-size: 1rem; /* Same size as labels */
+  transform: rotate(45deg);
+}
+
+.ball.ball-green {
+  background: radial-gradient(at var(--radial-position), var(--translucent-white), var(--light-green), var(--light-green));
+  border-color: var(--green);
+  color: var(--white);
+  background-color: var(--light-green);
+}
+
+.ball.ball-blue {
+  background: radial-gradient(at var(--radial-position), var(--translucent-white), var(--light-blue), var(--light-blue));
+  border-color: var(--blue);
+  color: var(--white);
+  background-color: var(--light-blue);
+}
+
+.ball.ball-red {
+  background: radial-gradient(at var(--radial-position), var(--translucent-white), var(--light-red), var(--light-red));
+  border-color: var(--red);
+  color: var(--white);
+  background-color: var(--light-red);
+}
+
+.ball.ball-orange {
+  background: radial-gradient(at var(--radial-position), var(--translucent-white), var(--light-orange), var(--light-orange));
+  border-color: var(--orange);
+  color: var(--white);
+  background-color: var(--light-orange);
+}
+
+.ball:hover {
+  animation: bounce 200ms;
+  animation-iteration-count: 2;
+}
+
+.ball:focus {
+  animation: bounce-higher var(--standard-animation-speed);
+  animation-iteration-count: infinite;
+}
+
+.ball.disabled {
+  background: radial-gradient(at var(--radial-position), var(--translucent-white), var(--lighter-gray), var(--lighter-gray));
+  color: var(--lighter-gray);
+  border-bottom-color: var(--light-gray);
+  animation: none;
+}
+
+@keyframes bounce {
+	0% {
+    bottom: 0;
+		animation-timing-function: ease-out;
+	}
+	60% {
+    bottom: 0.5rem;
+		animation-timing-function: ease-in;
+	}
+  100% {
+    bottom: 0;
+		animation-timing-function: ease-out;
+	}
+}
+
+@keyframes bounce-higher {
+	0% {
+    bottom: 0;
+		animation-timing-function: ease-out;
+	}
+	50% {
+    bottom: 1.9rem;
+		animation-timing-function: ease-in;
+	}
+  100% {
+    bottom: 0;
+		animation-timing-function: ease-out;
+	}
 }
 
 /********************************************
@@ -143,18 +256,19 @@ Radio buttons
 ********************************************/
 
 .rad {
-  padding: 0.7rem;
   color: var(--gray);
+  padding-left: var(--standard-padding);
 }
 
-.rad label {
+.rad :not(input[type="radio"]:checked) + label {
   cursor: pointer;
+  padding-left: 0;
+  transition: padding-left var(--standard-animation-speed);
 }
 
-.rad label:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 0.4rem;
-  text-underline-offset: 0.4rem;
+.rad :not(input[type="radio"]:checked) + label:hover {
+  padding-left: var(--standard-padding);
+  transition: padding-left var(--standard-animation-speed);
 }
 
 .rad input[type=radio] {
@@ -162,43 +276,36 @@ Radio buttons
 }
 
 .rad input[type="radio"]:checked + label {
-  font-size: 1.5rem;
-  text-decoration: underline;
-  text-decoration-thickness: 0.4rem;
-  text-underline-offset: 0.4rem;
-  opacity: 1;
+  font-size: 2rem;
 }
-
-/* Green radio */
 
 .rad.rad-green {
   color: var(--green);
 }
 
-/* Blue radio */
-
 .rad.rad-blue {
   color: var(--blue);
 }
-
-/* Red radio */
 
 .rad.rad-red {
   color: var(--red);
 }
 
-/* Orange radio */
-
 .rad.rad-orange {
   color: var(--orange)
 }
 
+.rad.rad-white {
+  color: var(--white)
+}
+
 .rad input[type="radio"][disabled] + label {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .rad input[type="radio"][disabled]:not(:checked) + label:hover {
   text-decoration: none;
+  padding-left: 0;
 }
 
 /********************************************
@@ -208,11 +315,12 @@ Text boxes
 ********************************************/
 
 .text {
-  border: 0.4rem solid;
-  padding: 0.7rem;
+  border: var(--standard-border) solid;
+  padding: var(--standard-padding);
   border-radius: var(--border-radius);
   color: var(--gray);
   background-color: var(--white);
+  font-size: 1rem;
 }
 
 .text::-webkit-input-placeholder {
@@ -348,29 +456,29 @@ Text boxes
 }
 
 .text[disabled] {
-  border-color: var(--gray);
-  color: var(--gray);
-  background-color: var(--light-gray);
+  border-color: var(--light-gray);
+  color: var(--light-gray);
+  background-color: var(--lighter-gray);
 }
 
 .text[disabled]::-webkit-input-placeholder {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .text[disabled]::-moz-placeholder {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .text[disabled]:-ms-input-placeholder {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .text[disabled]::-ms-input-placeholder {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .text[disabled]::placeholder {
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 /********************************************
