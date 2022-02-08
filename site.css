@@ -28,7 +28,7 @@ body {
 }
 
 .sections .section {
-  border: 0.1rem solid #ddd;
+  border: 0.1rem solid transparent;
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 1rem;
