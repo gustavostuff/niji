@@ -13,8 +13,6 @@ html, body {
 @media (min-width: 1100px) {
   .sections {
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 }
 
@@ -22,8 +20,6 @@ html, body {
 @media (min-width: 1600px) {
   .sections {
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 15rem;
-    padding-right: 15rem;
   }
 }
 
@@ -32,6 +28,7 @@ html, body {
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 1rem;
+  box-sizing: border-box;
 }
 
 .footer {
