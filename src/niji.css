@@ -258,6 +258,8 @@ Radio buttons
 .rad {
   color: var(--gray);
   padding-left: var(--standard-padding);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .rad :not(input[type="radio"]:checked) + label {
