@@ -166,28 +166,28 @@ Bauncy balls
   border: 0;
   padding: var(--standard-padding) 2rem var(--standard-padding) 2rem;
   background: radial-gradient(at var(--radial-position),
-    var(--white), var(--white), var(--black));
+    var(--white), var(--white), var(--gray));
   transform: rotate(90deg);
 }
 
 .ball.ball-green {
   background: radial-gradient(at var(--radial-position),
-    var(--light-green), var(--green), var(--black));
+  var(--white), var(--light-green), var(--green), var(--black));
 }
 
 .ball.ball-blue {
   background: radial-gradient(at var(--radial-position),
-    var(--light-blue), var(--blue), var(--black));
+  var(--white), var(--light-blue), var(--blue), var(--black));
 }
 
 .ball.ball-red {
   background: radial-gradient(at var(--radial-position),
-    var(--light-red), var(--red), var(--black));
+  var(--white), var(--light-red), var(--red), var(--black));
 }
 
 .ball.ball-orange {
   background: radial-gradient(at var(--radial-position),
-    var(--light-orange), var(--orange), var(--black));
+  var(--white), var(--light-orange), var(--orange), var(--black));
 }
 
 .ball:hover {
@@ -201,9 +201,8 @@ Bauncy balls
 }
 
 .ball.disabled {
-  background: radial-gradient(at var(--radial-position), var(--translucent-white), var(--lighter-gray), var(--lighter-gray));
-  color: var(--lighter-gray);
-  border-bottom-color: var(--light-gray);
+  background: radial-gradient(at var(--radial-position),
+    var(--light-gray), var(--light-gray), var(--gray));
   animation: none;
 }
 
