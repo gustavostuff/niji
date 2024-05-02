@@ -1,5 +1,5 @@
 
-## Niji, Childish styling for HTML elements
+### Niji, Childish styling for HTML elements (inspired by Duolingo)
 
 [Demo site](https://gustavostuff.github.io/niji/)
 
