@@ -1,4 +1,6 @@
 
 ## Niji, Childish styling for HTML elements
 
-Documentation is still pending.
+Look at index.html for examples
+
+

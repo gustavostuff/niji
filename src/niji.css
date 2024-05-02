@@ -17,7 +17,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   --standard-padding: 0.7rem;
   --standard-margin: 0.7rem;
 
-  --standard-animation-speed: 300ms;
+  --standard-animation-speed: 200ms;
+  --half-animation-speed: 100ms;
+  --double-animation-speed: 400ms;
 
   --radial-position: 2.33rem 2.33rem;
 
@@ -106,14 +108,12 @@ Buttons
 
 .btn {
   border-radius: var(--border-radius);
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-bottom: var(--standard-border) solid var(--light-gray);
-  padding: var(--standard-padding) 2rem var(--standard-padding) 2rem;
-  color: var(--gray);
-  background-color: var(--white);
-  font-size: 1rem; /* Same size as labels */
+  border: 0;
+  padding: var(--standard-padding) 2rem;
+  color: var(--white);
+  background-color: var(--light-gray);
+  box-shadow: 0 4px 8px var(--light-gray);
+  transition: transform var(--half-animation-speed), box-shadow var(--half-animation-speed);
 }
 
 .btn.btn-green {
@@ -141,9 +141,8 @@ Buttons
 }
 
 .btn:not(.disabled):active {
-  top: var(--standard-border);
-  margin-bottom: 0.4rem;
-  border-bottom-width: 0;
+  transform: translateY(4px);
+  box-shadow: none;
 }
 
 .btn.disabled {
@@ -190,12 +189,12 @@ Bauncy balls
 }
 
 .ball:hover {
-  animation: bounce 200ms;
+  animation: bounce var(--standard-animation-speed);
   animation-iteration-count: 2;
 }
 
 .ball:focus {
-  animation: bounce-higher var(--standard-animation-speed);
+  animation: bounce-higher var(--double-animation-speed);
   animation-iteration-count: infinite;
 }
 
@@ -302,12 +301,13 @@ Text boxes
 ********************************************/
 
 .text {
-  border: var(--standard-border) solid;
+  border: transparent;
   padding: var(--standard-padding);
   border-radius: var(--border-radius);
   color: var(--gray);
   background-color: var(--white);
   font-size: 1rem;
+  box-shadow: 0 4px 8px var(--light-gray);
 }
 
 .text::-webkit-input-placeholder {
